@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 500ms linear;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.clearance-form {
+    position: absolute;
+    display: block;
+    background: #f0f0f0;
+    width: 70%;
+    padding: 30px;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+}
+
+
+.clearance-form .head {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.clearance-form .head a {
+    position: absolute;
+    display: inline-flex;
+    left: 20px;
+    top: -10px;
+    text-decoration: none;
+    padding: 10px;
+    color: #610000;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.clearance-form .head a:hover {
+    background: #000;
+    color: #fff;
+}
+.clearance-form .head h2{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.clearance-form hr {
+    margin: 5px;
+}
+
+.clearance-form .input-group {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.clearance-form .input-group label {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin: 2px;
+    padding: 5px;
+}
+
+.alert {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    border-radius: .3em;
+    box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.alert.success {
+    background: #a0ffa7;
+    color: #008a09;
+}
+.alert.danger {
+    background: #ffb1bb;
+    color: #750010;
+}
+
+.err-group {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 174, 174, 0.918);
+    color: rgb(173, 0, 0);
+    border-radius: .2em;
+}
+
+.clearance-form .input-group input {
+    border: none;
+    outline: none;
+    width: 95%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: .3em;
+    box-shadow: 2px 0px 2px 0px rgba(27, 183, 255, 0.2);
+}
+
+.clearance-form .input-group input::placeholder {
+    letter-spacing: 0.2em;
+}
+
+.clearance-form .input-group select {
+    border: none;
+    outline: none;
+    width: 95%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: .3em;
+}
+
+.clearance-form .form-cta {
+    position: relative;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.clearance-form .form-cta button {
+    border: none;
+    outline: none;
+    padding: 15px;
+    background: rgb(25, 100, 185);
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: .3em;
+}
+
+.clearance-form .form-cta p {
+    display: inline-flex;
+    margin-top: 15px;
+}

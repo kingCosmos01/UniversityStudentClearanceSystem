@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 500ms linear;
+}
+
+
+body {
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.clearance-container {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.clearance-container .overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000ad;
+}
+
+.clearance-container .navigations {
+    position: absolute;
+    display: flex;
+    top: 55%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+}
+
+.clearance-container .navigations li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.clearance-container .navigations li {
+    list-style-type: none;
+    margin: 10px;
+}
+.clearance-container .navigations li a {
+    text-decoration: none;
+    padding: 10px;
+    background: #ff4800;
+    color: #fff;
+    border-radius: 20px;
+    letter-spacing: 0.1em;
+}
+
+.clearance-container .head {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.clearance-container .head h2 {
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+
+.clearance-container .footer {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+    justify-content: center;
+}
+
+.clearance-container .footer p {
+    padding: 20px;
+    color: #fff;
+}

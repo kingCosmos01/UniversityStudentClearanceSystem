@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 500ms ease;
+}
+
+
+
+.student-details-box {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #f0f0f0;
+    border-radius: .3em;
+    overflow: scroll;
+    z-index: 9995;
+}
+
+
+
+.student-details-box .head  {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background: #171717;
+}
+
+.student-details-box .head a {
+    position: relative;
+    display: flex;
+    height: 20px;
+    width: 90px;
+    text-decoration: none;
+    padding: 10px;
+    top: 70px;
+    color: #000;
+    background: #fff;
+    justify-content: center;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+.student-details-box .head .student-info {
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+}
+
+.student-details-box .head .student-info h2 {
+    font-weight: 600;
+    width: 100%;
+    color: #fff;
+}
+
+.student-details-box .head .student-info .info {
+    position: relative;
+    display: block;
+    margin: 5px;
+    padding: 20px;
+}
+
+.student-details-box .head .student-info .info li {
+    list-style-type: none;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.89);
+    letter-spacing: 0.2em;
+}
+
+.student-details-box .head .student-info .info li.not-cleared {
+    padding: 3px;
+    margin: 3px;
+    background: #ffcd90dc;
+    color: #a95d00;
+    text-align: center;
+    border-radius: .9em;
+}
+
+.student-details-box .head .details-cta {
+    display: block;
+   justify-content: center;
+   text-align: center;
+   margin-right: 100px;
+}
+
+
+.student-details-box .head .details-cta button {
+    flex-direction: column;
+    margin-top: 15%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.student-details-box .head .details-cta button:nth-child(1) {
+    margin-top: 40px;
+}
+
+.student-details-box .head .details-cta button.messageBtn {
+    background: #008dad;
+    color: #fff;
+    cursor: pointer;
+}
+.student-details-box .head .details-cta button.verifyBtn {
+    background: #24c600;
+    color: #fff;
+    cursor: pointer;
+}
+.student-details-box .head .details-cta button.verifyBtnDisabled {
+    background: #919191;
+    color: #c6c6c6;
+}
+
+.student-details-box .course-form-content {
+    position: relative;
+    display: block; 
+}
+
+.student-details-box .course-form-content .title {
+    position: relative;
+    display: flex;
+    width: 80%;
+    left: 10%;
+    padding: 20px;
+    margin: 20px;
+    background: #ccc;
+    justify-content: center;
+    text-align: center;
+    border-radius: .3em;
+    box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.2) ;
+}
+
+.student-details-box .course-form-content .title h2 {
+    font-weight: 500;
+}
+
+.student-details-box .course-form-content .content {
+    position: relative;
+    display: none;
+    width: 80%;
+    left: 12%;
+    padding: 20px;
+    align-items: center;
+    background: #f0f0f0;
+}
+.student-details-box .course-form-content .content.active {
+    display: block;
+}
+
+
+.student-details-box .course-form-content .content .course-form {
+    position: relative;
+    display: grid;
+    cursor: pointer;
+}
+
+.student-details-box .course-form-content .content .course-form img {
+    width: 100%;
+    border-radius: 0.1em;
+    margin-top: 5px;
+}
+
+.details-footer {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    background: #ccc;
+}
+.details-footer p {
+    letter-spacing: 0.2em;
+    font-weight: 300;
+}
+
+
+/* AddExceptionModal & Overlay*/
+.addMessageBoxOverlay { 
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000bc;
+    z-index: 9996;
+    transition: all 500ms linear;
+}
+
+.addMessageBox {
+    display: block;
+    top: -50px;
+    left: 0;
+    right: 0;
+    transition: all 500ms linear;
+}
+
+.addMessageBox.active {
+    position: absolute;
+    display: block;
+    width: 400px;
+    padding: 45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f0f0f0;
+    border-radius: .5em;
+    z-index: 9997;
+    transition: all 500ms linear;
+}
+
+.addMessageBox .head {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.addMessageBox .head h2 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.addMessageBox .head .closeBtn {
+    position: absolute;
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #797979;
+    color: #fff;
+    right: -30px;
+    top: -30px;
+    justify-content: center;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.addMessageBox form {
+    margin-top: 20px;
+}
+
+.addMessageBox form input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.addMessageBox form input[type="text"]::placeholder {
+    text-align-last: left;
+    color: rgba(60, 0, 0, 0.724);
+}
+
+.addMessageBox form .addExceptionBtn {
+    position: relative;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #08bd1d;
+    color: #fff;
+    cursor: pointer;
+}

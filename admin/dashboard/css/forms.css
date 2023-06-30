@@ -1,0 +1,134 @@
+
+.add-hod-box-overlay {
+   position: fixed;
+   display: none;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.822);
+   z-index: 999;
+}
+
+.add-hod-box {
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: scale(0);
+    top: -50%;
+    visibility: hidden;
+    transition: all 500ms ease-in-out;
+}
+
+
+.add-hod-box.active {
+    position: absolute;
+    display: block;
+    background: #f0f0f0;
+    width: 70%;
+    padding: 30px;
+    left: 50%;
+    top: 50%;
+    transform: scale(1);
+    visibility: visible;
+    transform: translate(-50%, -50%);
+    border-radius: .5em;
+    z-index: 999;
+}
+
+.add-hod-box .head {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.add-hod-box .head h2{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.add-hod-box .head .closeBtn {
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: #181818ad;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    right: 10px;
+    bottom: 20px;
+}
+
+.add-hod-box hr {
+    margin: 5px;
+}
+
+.add-hod-box .input-group {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.add-hod-box .input-group label {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin: 2px;
+    padding: 5px;
+}
+
+.add-hod-box .input-group input {
+    border: none;
+    outline: none;
+    width: 95%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: .3em;
+    box-shadow: 2px 0px 2px 0px rgba(27, 183, 255, 0.2);
+}
+
+.add-hod-box .input-group input::placeholder {
+    letter-spacing: 0.2em;
+}
+
+.add-hod-box .input-group select {
+    border: none;
+    outline: none;
+    width: 95%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: .3em;
+}
+
+.add-hod-box .form-cta {
+    position: relative;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.add-hod-box .form-cta button {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    background: rgb(41, 185, 25);
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: .3em;
+}
+
+.add-hod-box .form-cta p {
+    display: inline-flex;
+    margin-top: 15px;
+}
